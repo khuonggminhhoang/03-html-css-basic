@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 CSS Cơ Bản</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Internal CSS -->
+    <!-- <style>
+        /* CSS dựa vào tên element */
+        h1,
+        b {
+            color: red;
+        }
+
+        /* CSS tất cả các element */
+        * {
+            color: violet;
+        }
+
+
+        /* CSS dựa vào id */
+        #h2_id_1,
+        #h2_id_2 {
+            color: gray;
+        }
+
+        /* CSS dựa vào class */
+        .chr-green {
+            color: green;
+        }
+
+        .chr-red {
+            color: red;
+        }
+
+        .text-align-class{
+            text-align: center;
+        }
+
+
+    </style> -->
+
+
+    <h1 id="h1_id">Nội dung thẻ h1</h1>
+
+    <h2 id="h2_id_1" class="chr-green">Nội dung thẻ h2</h2>
+    <h2 class="chr-green">Nội dung thẻ h2</h2>
+    <!-- inline CSS -->
+    <h2 style="text-align: center;">Nội dung thẻ h2</h2>
+
+    <p class="chr-green text-align-class">You can’t help feeling that the whole world will be singing about “Sofia” this
+        summer. The music video, shot in Cuba, is likely to contribute further to the record’s success. Looks like all
+        doors are open for “Sofia”. One thing is clear: this summer once again, it will be impossible to avoid enjoying
+        this young Spanish vocalist and
+        his music.
+    </p>
+
+    <!-- <style>
+        .chr-red {
+            color: #D52027;
+            background: #EDF1FD;
+            font-style:italic;
+            font-family: 'Tektur', cursive;  
+        }
+
+        * {
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style> -->
+
+    <p class="chr-red"><b>Độ mạnh của CSS: CSS-id > CSS-class > CSS-element > CSS-*</b></p>
+
+    <!-- 
+        Borders (Đường viền):
+            ● Đường viền bao quanh padding (phần đệm) và nội dung.
+            ● Dùng để bao bọc 1 phần tử.
+            ● Một số kiểu border:
+                ● dotted: Đường viền chấm
+                ● dashed: Đường viền nét đứt
+                ● solid: Đường viền liền 
+    -->
+
+    <style>
+        .box-class {
+            border: 5px black solid;
+            /* padding: 10px 10px 10px 10px; theo thứ tự kim đồng hồ từ trên -> phải -> dưới -> trái */
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+            color: aqua;
+            background: green;
+            margin: 20px 20px;
+        }
+    </style>
+
+    <p class="box-class">
+        box1
+    </p>
+
+    <p class="box-class">
+        box2
+    </p>
+
+    <style>
+        /* Căn lề trái */
+        .text-1 {
+            text-align: left;
+        }
+
+        /* căn lề phải */
+        .text-2 {
+            text-align: right;
+        }
+
+        /* căn giữa */
+        .text-3 {
+            text-align: center;
+        }
+
+        /* căn lề 2 bên */
+        .text-4 {
+            text-align: justify;
+        }
+    </style>
+
+    <p class="text-1">Đoạn 1</p>
+    <p class="text-2">Đoạn 2</p>
+    <p class="text-3">Đoạn 3</p>
+    <p class="text-4">+Lis: Mình ôn chủ yếu chỉ có giải đề trên study4 thôi và làm đề ETS22 và 23. Thì theo mình thấy
+        thì đề lis thì chỉ ở tầm ETS22 với tầm 3 test đầu của 23, không có khó như test 456 của ets23. Lúc ôn thì mình
+        làm đc tầm 400 hơn thì đi thi mình được 400 luôn</p>
+
+
+    <style>
+        /* in hoa đoạn văn*/
+        .txt-prg-upper {
+            text-transform: uppercase;
+        }
+
+        /* in thường đoạn văn */
+        .txt-prg-lower {
+            text-transform: lowercase;
+        }
+
+        /* viết hoa các chữ cái đầu mỗi từ trong pgr */
+        .txt-pgr-capit {
+            text-transform: capitalize;
+        }
+    </style>
+
+    <p class="txt-prg-upper">content 1</p>
+    <p class="txt-prg-lower">ConTent 2</p>
+    <p class="txt-pgr-capit">content ba</p>
+
+    <!-- 
+    Thuộc tính display:
+        ● display: inline;
+            ● Không đặt được chiều rộng và chiều cao.
+            ● Không thêm được margin cho bên trên và bên dưới. (xem lại)
+        ● display: block;
+            ● Chiều rộng kéo dài từ trái sang phải, luôn bắt đầu ở một hàng mới.
+            ● Cho phép đặt chiều rộng và chiều cao.
+            ● Cho phép đặt margin, padding cho bên trên và bên dưới.
+        
+        ● display: inline-block;
+            ● Chiều rộng mặc định bằng chiều rộng của phần tử.
+            ● Không bắt đầu ở một hàng mới.
+            ● Cho phép đặt chiều rộng và chiều cao.
+            ● Cho phép đặt margin, padding cho bên trên và bên dưới.
+        ● display: none;
+            ● Ẩn phần tử hoàn toàn, không chiếm diện tích trong trang
+    -->
+
+    <style>
+        span {
+            background: yellow;
+            border: 2px solid #000;
+        }
+
+        .display-inline {
+            display: inline;
+            /* width: 100px;
+            height: 200px; */
+            /* không chỉnh được kích thước nếu là kiểu hiển thị inline */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 20px;
+            margin-right: 30px;;
+            /* margin-bottom: 30px;
+            margin-top: 5px; */
+            /* không chỉnh được margin top, bottom nếu là kiểu hiển thị inline */
+        }
+
+        .display-block{
+            display: block;
+            width: 100px;
+            height: 200px;
+            padding: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .display-inline-block{
+            display: inline-block;
+            width: 100px;
+            height: 200px;
+            padding-top: 45px   ;
+            margin: 30px;
+            text-align: center;
+        }
+
+        .display-none{
+            display: none;
+        }
+        
+        .visibility-hidden {
+            visibility: visible;
+            visibility: hidden;
+            padding: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            /* giống kiểu inline, không margin top, bottom được */
+        }
+
+    </style>
+
+    <p>Mình ôn chủ yếu chỉ có giải đề trên study4 <span class="display-inline">element1</span> <span class="display-inline">element2</span> thôi và làm đề ETS22 và 23. Thì theo mình thấy thì đề lis thì chỉ ở
+        tầm ETS22 với tầm 3 test đầu của 23, không có khó như test 456 của ets23. Lúc ôn thì mình làm đc tầm 400 hơn thì
+        đi thi mình được 400 luôn</p>
+    
+    <p >Mình ôn chủ yếu chỉ có giải đề trên study4 <span class="display-block">element1</span> <span class="display-block">element2</span> thôi và làm đề ETS22 và 23. Thì theo mình thấy thì đề lis thì chỉ ở
+        tầm ETS22 với tầm 3 test đầu của 23, không có khó như test 456 của ets23. Lúc ôn thì mình làm đc tầm 400 hơn thì
+        đi thi mình được 400 luôn</p>
+
+    <p >Mình ôn chủ yếu chỉ có giải đề trên study4 <span class="display-inline-block">element1</span> <span class="display-inline-block">element2</span> thôi và làm đề ETS22 và 23. Thì theo mình thấy thì đề lis thì chỉ ở
+        tầm ETS22 với tầm 3 test đầu của 23, không có khó như test 456 của ets23. Lúc ôn thì mình làm đc tầm 400 hơn thì
+        đi thi mình được 400 luôn</p>
+
+    <p>Mình ôn chủ yếu chỉ có giải đề trên study4 <span class="display-none">element1</span> <span class="display-none">element2</span> thôi và làm đề ETS22 và 23. Thì theo mình thấy thì đề lis thì chỉ ở
+        tầm ETS22 với tầm 3 test đầu của 23, không có khó như test 456 của ets23. Lúc ôn thì mình làm đc tầm 400 hơn thì
+        đi thi mình được 400 luôn</p>
+
+    <!-- 
+        ● visibility: hidden;
+            ● Ẩn nhưng vẫn chiếm diện tích của phần tử có.
+
+        ● visibility: visible;
+            ● Mặc định. Phần tử luôn được hiển thị.
+     -->
+
+     <p>Mình ôn chủ yếu chỉ có giải đề trên study4 <span class="visibility-hidden">element1</span> <span class="visibility-hidden">element2</span> thôi và làm đề ETS22 và 23. Thì theo mình thấy thì đề lis thì chỉ ở
+        tầm ETS22 với tầm 3 test đầu của 23, không có khó như test 456 của ets23. Lúc ôn thì mình làm đc tầm 400 hơn thì
+        đi thi mình được 400 luôn</p>
+
+    <!-- Phần 08. Combinator selectors (Bộ chọn tổ hợp) -->
+    <!-- 
+        ● Adjacent sibling selectors (Bộ chọn anh chị em liền kề)
+            ● Chọn phần tử c được đặt cùng cấp và phải kề ngay sau phần tử b.
+            ● Cú pháp: b + c { } 
+    -->
+
+    <!-- 
+        ● General sibling selectors (Bộ chọn anh chị em chung)
+            ● Chọn tất cả phần tử c cùng cấp với phần tử b, và những phần tử c phải nằm sau phần tử b.
+            ● Cú pháp: b ~ c { } 
+    -->
+
+    <!-- 
+        ● Child selectors (Bộ chọn con)
+            ● Chọn tất cả phần tử b là cấp con đầu tiên (cấp 1) của phần tử a.
+            ● Cú pháp: a > b { }
+     -->
+
+    <!-- 
+        ● Descendant selectors (Bộ chọn hậu duệ)
+            ● Chọn tất cả phần tử b bên trong phần tử a.
+            ● Cú pháp: a b { }
+     -->
+    
+    <style>
+        /* div + p {
+            background-color: aqua;
+        } */
+
+        /* div ~ p {
+            background-color: antiquewhite;
+        } */
+
+        /* div > p {
+            background-color: aqua;
+        } */
+
+        div p {
+            background-color: aqua;
+        }
+
+
+    </style>
+
+    <div>
+        <p>Nội dung p1</p>
+        <p>Nội dung p2</p>
+        <section>
+            <p>Nội dung section1</p>
+            <p>Nội dung section2</p>
+            <article>
+                <p>Nội dung article1</p>
+                <p>Nội dung article2</p>
+            </article>
+        </section>
+        <p>Nội dung p3</p>
+    </div>
+    <p>Nội dung p4</p>
+    <h2>Nội dung h2</h2>
+    <p>Nội dung p5</p>
+    <p>Nội dung p6</p>
+
+
+
+    <!-- Phần 9: Position -->
+    <!-- 
+        ● position: static; (default)
+            ● Vị trí luôn cố định so với vị trí mặc định của chính nó.
+            ● Không sử dụng được các thuộc tính top, bottom, right, left.
+
+        ● position: relative;
+            ● Vị trí tương đối so với vị trí mặc định của chính nó.
+            ● Sử dụng được các thuộc tính top, right, bottom, left.
+
+        ● position: absolute;
+            ● Vị trí tuyệt đối so với phần tử bao ngoài (phần tử cha - có position khác static).
+            ● Sử dụng được các thuộc tính top, right, bottom, left.
+
+        ● position: fixed;
+            ● Được định vị so với khung nhìn (viewport), nghĩa là nó luôn ở một vị trí cố định ngay cả khi
+            trang được cuộn.
+            ● Sử dụng được các thuộc tính top, right, bottom, left.
+        
+        ● position: sticky;
+            ● Là sự kết hợp của position: relative và position: fixed.
+            ● Khi chưa scroll đến phần tử đó thì phần tử sẽ hiển thị kiểu relative.
+            ● Khi scroll đến phần tử đó thì phần tử sẽ hiển thị kiểu fixed.
+    -->
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .box-sticky {
+            margin: initial;
+            padding: initial;
+            background: greenyellow;
+            height: 50px ;
+            border: #000 2px dashed;
+            line-height: 50px;
+            text-align: center;
+            position: sticky;
+            bottom: 0px;
+            width: 100vw;
+            z-index: 999;
+        }
+    </style> 
+
+    <div class="box-sticky">
+        box-sticky 
+    </div>
+
+
+    <style>
+        .box{
+            background: gray;
+            border-radius: 12px;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border: #000 2px solid;
+            text-align: center;
+            line-height: 100px; 
+            /* line-height: chỉnh chiều cao của content, bôi đen là thấy */
+            /* position: static; */
+            margin: 0;
+        }
+
+        .box2 {
+            background: orange;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+    </style>
+
+    <div class="box box1">
+        box1
+    </div>
+
+    <div class="box box2">
+        box2
+    </div>
+
+    <div class="box box3">
+        box3
+    </div>
+    <br><br><br><br><br>
+
+    <style>
+        .box-absolute {
+            background: gray;
+            width: 200px;
+            height: 200px;
+            border-radius: 12px;
+            border: #000 2px solid;
+            line-height: 200px;
+            text-align: center;
+            position: relative;
+        }
+
+        .sub-box {
+            background: orange;
+            border-radius: 12px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border: #000 2px dashed;
+            top: 120px;
+            left: 100px;
+            position: absolute;
+        }
+
+    </style>
+
+    <div class="box-absolute">
+        box
+        <div class="sub-box">
+            sub
+        </div>
+    </div>
+    <br>
+
+    <style>
+        .box-fixed {
+            background: red;
+            border: #000 2px dotted;
+            border-radius: 12px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <div class="box-fixed">
+        box
+    </div>
+
+    <!-- Phần 10: z-index -->
+    <!-- ● Thuộc tính z-index thiết lập thứ tự xếp chồng nhau của một thành phần vị trí.
+        ● Giá trị mặc định là 0.
+        ● z-index càng cao thì element đó càng nằm trên.
+        ● Chú ý: z-index không có tác dụng khi thuộc tính position có giá trị là static. 
+    -->
+
+
+</body>
+
+</html>

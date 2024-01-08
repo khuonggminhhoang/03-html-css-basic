@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #5D8DD5;
+}
+
+* {
+    box-sizing: border-box  ;
+}
+
+/* --------------------nav-bar----------------------- */
+.nav-bar {
+    
+    background-color: #1F0E3A;
+    border-radius: 12px;
+    border: #ECA5F9 2px solid;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+
+}
+
+.nav-bar-inline-block{
+    display: inline-block;
+    /* border: #ECA5F9 2px solid; */
+}
+
+.nav-bar-inline-block-icon{
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    left: 10px;
+}
+
+.-decorate-block {
+    position: absolute;
+    text-align: center;
+    top: 15%;
+}
+
+.li-inline-block {
+    display: inline-block;
+    width: 100px;
+}
+
+.ul-first{
+    padding: 0px;
+}  
+
+.nav-content {
+    color: #86D2FF;
+    text-decoration: none;
+    text-transform: capitalize;
+} 
+
+.search-class {
+    background: #ECB2FF;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.select-class {
+    padding: 3px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: #ECA5F9;
+    cursor: pointer;
+
+}
+
+.fa-cart-plus {
+    font-size: large;
+}
+
+.submit-class {
+    border-color: #86D2FF;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* --------------------------- */
+
+.generate-form {
+    border: 2px solid #ECA5F9;
+    border-radius: 12px;
+    background: #1F0E3A;
+    position: absolute;
+    /* top: 100px; */
+    left: 30%;
+    text-align: center;
+    color: #86D2FF;
+}
+
+.login{
+    width: 500px;
+    height: 300px;
+    top: 100px;
+}
+
+.title-class {
+    color: #5D8DD5;
+    border: #ECA5F9 2px solid;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    left: 200px;
+    border-radius: 10px;
+    background: #48178F ;
+}
+
+.box {
+    border-radius: 4px;
+    background: #ECA5F9;
+    width: 200px;
+    height: 25px;
+}
+
+#remember {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#forgot-password {
+    color: #5D8DD5;
+    text-decoration: none;
+
+}
+
+.submit-form {
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 30px;
+    left: 212.5px;
+    border-radius: 4px;
+    background: #38419D;
+    border: #71DAFD 2px solid;
+    color: #71DAFD;
+}
+
+.fa-square-facebook{
+    color: #ECA5F9;
+}
+.fa-square-instagram{
+    color: #ECA5F9;
+}
+.fa-square-twitter{
+    color: #ECA5F9;
+}
+
+.register {
+    top: 450px;
+    width: 500px;
+    height: 330px;
+}
+
+#term-condition{
+    font-size: medium;
+    text-align: center;
+}

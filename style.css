@@ -1,0 +1,50 @@
+/* Nhúng font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+/* CSS dựa vào tên element */
+b {
+    color: red;
+}
+
+/* CSS tất cả các element */
+* {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS dựa vào id */
+#h2_id_1,
+#h2_id_2 {
+    color: #9E98A2;
+}
+
+#h1_id {
+    background: #56F0A0;
+    text-align: center;
+    color: brown;
+    font-family: 'Tektur', cursive;
+    /* dùng để chỉ đinh văn bản in nghiêng hoăc normal (normal/italic) */
+    font-style: italic;
+    /* dùng để chỉnh kích cỡ (theo chiều dọc) của chữ, mặc định là 16px */
+    font-size: 40px; 
+    /* chỉnh độ dày của chữ, phụ thuộc vào bộ font chữ của nó */
+    font-weight: 600;
+}
+
+/* CSS dựa vào class */
+.chr-green {
+    color: #56F0A0;
+}
+
+.chr-red {
+    color: #D52027;
+    background: #EDF1FD;
+    font-style:italic;
+}
+
+.text-align-class {
+    /* text-align: center; */
+    text-align: justify;
+}
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        .generate-form {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #060611;
+            border-radius: 12px;
+            margin-top: 30px;
+            margin-left: 10%;
+            margin-right: 10%;
+            border: #ECA5F9 2px solid;
+        }
+
+        .title-class {
+            color: #5D8DD5;
+            text-align: center;
+            text-transform: uppercase;
+            background: #48178F;
+            padding: 10px 20px;
+            margin-left: 40%;
+            margin-right: 40%;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: #ECA5F9 2px solid;
+        }
+
+        
+        .info {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 16px;
+            color: #FF67C9;
+        }
+
+        .submit-class {
+            text-transform: uppercase;
+            background: #38419D;
+            padding: 5px 10px;
+            margin-left: 40%;
+            margin-right: 40%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: #71DAFD 2px solid;
+            color: rgb(33, 202, 208);
+            text-align: center;
+        }
+
+        .box {
+            border-radius: 4px;
+            background-color: #ECB2FF;
+            padding: 5px 5px;
+        }
+
+        .remember-class {
+            color: #E0E6E9;
+            text-transform: capitalize;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .p-class {
+            display: inline-block;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+            text-transform: capitalize;
+            color: #E0E6E9;
+            font-size: 13px;
+        }
+
+        .div-class {
+            text-align: center;
+        }
+
+        .text-color-blue {
+            color: blue;
+            text-decoration: none;
+        }
+        
+    </style>
+
+    <form action="https://www.w3schools.com/action_page.php" class="generate-form" target="_blank" method="POST">
+            <p class="title-class"><b>sign in</b>
+        </p>
+        <p class="info">
+            <i class="fa-solid fa-user" style="padding-right: 5px ;"></i>
+            <input type="text" name="username" id="username-id" class="box" placeholder="Username...">
+        </p>
+
+        <p class="info">
+            <i class="fa-solid fa-key" style="padding-right: 5px ;"></i>
+            <input type="password" name="password" id="password-id" class="box" placeholder="Password...">
+        </p>
+
+        <div class="div-class">
+            <p  class="p-class ">
+                <input type="checkbox" name="" id="checkbox-id" class="box">
+                <label for="checkbox-id" class="text-center">remember me?</label>
+            </p>
+            <p  class="p-class text-color-blue">
+                <a href="#" target="_blank" class="text-color-blue">forgot password?</a>
+            </p>
+
+        </div>
+        <div style="text-align: center;">
+            <button type="submit" class="submit-class">login</button>
+        </div>
+    </form>
+
+    <form action="https://www.w3schools.com/action_page.php" class="generate-form" target="_blank" method="POST">
+        <p class="title-class"><b>sign up</b></p>
+        <p class="info">
+            <i class="fa-solid fa-user" style="padding-right: 5px;"></i>
+            <input type="text" name="username" id="username-id" class="box" placeholder="Username...">
+        </p>
+
+        <p class="info">
+            <i class="fa-solid fa-at" style="padding-right: 5px;"></i>
+            <input type="email" name="email" id="email-id" class="box" placeholder="Email...">
+        </p>
+
+        <p class="info">
+            <i class="fa-solid fa-phone-volume" style="padding-right: 5px;"></i>
+            <input type="number" name="phone" id="phone-id" class="box" placeholder="Phone...">
+        </p>
+
+        <p class="info">
+            <i class="fa-solid fa-key" style="padding-right: 5px;"></i>
+            <input type="password" name="password" id="password-id" class="box" placeholder="Password...">
+        </p>
+
+        <p class="info">
+            <i class="fa-solid fa-lock" style="padding-right: 5px;"></i>
+            <input type="password" name="retype-password" id="retype-password-id" class="box" placeholder="Retype password...">
+        </p>
+
+        <div style="text-align: center;">
+            <button type="submit" class="submit-class">register</button>
+        </div>
+
+
+    </form>
+
+
+</body>
+</html>
