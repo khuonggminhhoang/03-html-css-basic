@@ -73,12 +73,12 @@
 
         <p >
             <i class="fa-solid fa-key" style="padding-right: 5px ;"></i>
-            <input class="box" type="password" name="password" id="password-id" placeholder="Password..." required>
+            <input class="box" type="password" name="password" id="password-id" placeholder="Password..." minlength="8" required>
         </p>
 
         <p id="remember">
-            <input type="checkbox" name="remember-me?" id="remember-id" checked>
-            <label for="remember-id">Remember me?</label>
+            
+            <label for="remember-id"><input type="checkbox" name="remember-me?" id="remember-id"  style="vertical-align: middle;" checked>Remember me?</label>
         </p>
 
         <a id="forgot-password" href="#">Forgot password?</a>
@@ -100,16 +100,16 @@
 
         <p >
             <i class="fa-solid fa-key" style="padding-right: 5px ;"></i>
-            <input class="box" type="password" name="password" id="password-id" placeholder="Password..." required>
+            <input class="box" type="password" name="password" id="password-id" placeholder="Password..." pattern='[a-z0-5]{8,}'  required>
         </p>
 
         <p >
             <i class="fa-solid fa-unlock" style="margin-right: 5px;"></i>
-            <input class="box" type="password" name="retype-password" id="retype-password-id" placeholder="Retype password..." required>
+            <input class="box" type="password" name="retype-password" id="retype-password-id" placeholder="Retype password..." minlength="8" required>
         </p>
 
         <p id="term-condition">
-            <input type="checkbox" name="term-condition" id="term-condition-id">
+            <input type="checkbox" name="term-condition" id="term-condition-id" style="vertical-align: middle;">
             <label for="term-condition-id">I agree to the <a href="#" style="color: #5D8DD5;">Terms & Conditions</a></label>
         </p>
 
